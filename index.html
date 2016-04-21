@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My_Roster</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <center>
@@ -13,21 +13,60 @@
 </head>
 
 <body>
-    <div class="My NFL Roster">
-        <div class="container">
-            <div class="row">
-                <div class="player-roster">
-                    <div class="col-sm-2">
-                        <div class="player-form">
-                            <div class="col-sm-2">
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading"> <b>My NFL Roster</b> </div>
+            <div class="panel-body">
+                <div class="player-form">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="position" class="col-sm-2 control-label">Position</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="position" placeholder="Position">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="number" class="col-sm-2 control-label">Number</label>
+                            <div class="col-sm-2">
+                                <input type="number" class="form-control" id="number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button id="addPlayerBtn" class="btn btn-success">Add Player</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="roster" class="player-roster">
+                        <div id="playerCardTemplate" class="player-card">
+                            <div class="col-sm-2">
+                                <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/"/>
+                                <div class="row">
+                                </div>
+                                <div class="col-sm-6">
+                                    <div><strong>Name: </strong></div>
+                                    <div><strong>Position: </strong></div>
+                                    <div><strong>Number: </strong></div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="bootstrap.js"></script>
-    <script src="app.js"></script>
+
+        <script src="bootstrap.js"></script>
+        <script src="app.js"></script>
+        <script>
+
+        </script>
 </body>
+
 </html>

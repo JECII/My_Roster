@@ -1,0 +1,16 @@
+
+body {
+  margin: 20px;
+}
+
+.player-form {
+  border-bottom: 1px solid #dddddd;
+  margin: 10px;
+}
+
+.player-card img {
+    display:inline-block;
+    border:1px solid gold
+    height: 100px;
+  width: 100px:
+}
