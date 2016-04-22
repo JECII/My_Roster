@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My_Roster</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <center>
@@ -14,10 +14,11 @@
 
 <body>
     <div class="container">
-        <div class="panel panel-default">
-            <div class="panel-heading"> <b>My NFL Roster</b> </div>
+        <div class="panel panel">
+            <div class="panel-heading"> <center><b><h2>Player Roster</h2></b></center>
+            </div>
             <div class="panel-body">
-                <div class="player-form">
+                <div class="player">
                     <form class="form-horizontal">
                         <div class="form-group">
                             <label for="name" class="col-sm-2 control-label">Name</label>
@@ -43,30 +44,84 @@
                             </div>
                         </div>
                     </form>
+               <center> <img src="http://media.nbcchicago.com/images/652*379/01-12-2016-nfl-generic-field-football.jpg" alt="nfl"> </center>
                     <div id="roster" class="player-roster">
-                        <div id="playerCardTemplate" class="player-card">
-                            <div class="col-sm-2">
-                                <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/"/>
-                                <div class="row">
+                        <div class="row-1">
+                            <div class="col-sm-6">
+                                <div id="playerCardTemplate" class="player-card-1">
+                                    <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/">
+
+                                    <div><strong>Name: </strong></div>
+                                    <div><strong>Position: </strong></div>
+                                    <div><strong>Number: </strong></div>
                                 </div>
+                            </div>
+                            <div id="the-others" class="row">
                                 <div class="col-sm-6">
+                                    <div id="playerCardTemplate" class="player-card-2">
+                                        <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/">
+
+                                        <div><strong>Name: </strong></div>
+                                        <div><strong>Position: </strong></div>
+                                        <div><strong>Number: </strong></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div id="playerCardTemplate" class="player-card-3">
+                                    <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/">
+
                                     <div><strong>Name: </strong></div>
                                     <div><strong>Position: </strong></div>
                                     <div><strong>Number: </strong></div>
                                 </div>
                             </div>
 
+                            <div class="col-sm-3">
+                                <div id="playerCardTemplate" class="player-card-4">
+                                    <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/">
+
+                                    <div><strong>Name: </strong></div>
+                                    <div><strong>Position: </strong></div>
+                                    <div><strong>Number: </strong></div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div id="playerCardTemplate" class="player-card-5">
+                                    <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/">
+                                    <div><strong>Name: </strong></div>
+                                    <div><strong>Position: </strong></div>
+                                    <div><strong>Number: </strong></div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div id="playerCardTemplate" class="player-card-6">
+                                    <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/">
+
+                                    <div><strong>Name: </strong></div>
+                                    <div><strong>Position: </strong></div>
+                                    <div><strong>Number: </strong></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+</body>
 
-        <script src="bootstrap.js"></script>
-        <script src="app.js"></script>
-        <script>
 
-        </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+<script>
+
+</script>
 </body>
 
 </html>

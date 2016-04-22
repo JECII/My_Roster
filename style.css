@@ -1,6 +1,7 @@
 
 body {
   margin: 20px;
+  background-color: firebrick;
 }
 
 .player-form {
@@ -9,8 +10,32 @@ body {
 }
 
 .player-card img {
-    display:inline-block;
-    border:1px solid gold
+    border:1px solid red;
     height: 100px;
-  width: 100px:
+  width: 100px;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  padding-right: 100px;
+}
+
+.player-card-1 {
+ align-content: center;
+  text-align: center;
+}
+  
+.player-card-2 {
+   align-content: center;
+    text-align: center;
+}
+.panel-body{
+  color: darkblue;
+}
+
+.h1{
+  color: black;
+}
+
+.heading{
+  color:red;
 }
