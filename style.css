@@ -9,7 +9,8 @@ body {
   margin: 10px;
 }
 
-.player-card img {
+.player-card{
+    display: inline-block;
     border:1px solid red;
     height: 100px;
   width: 100px;
@@ -21,12 +22,17 @@ body {
 
 .player-card-1 {
  align-content: center;
-  text-align: center;
+  
 }
   
-.player-card-2 {
+.player-card {
    align-content: center;
-    text-align: center;
+    display:inline-block;
+}
+
+.player-card-3 {
+   align-content: center;
+    
 }
 .panel-body{
   color: darkblue;
@@ -38,4 +44,11 @@ body {
 
 .heading{
   color:red;
+}
+.panel{
+   color:green ;
+}
+
+.player-card>button{
+  text-align: center;
 }
