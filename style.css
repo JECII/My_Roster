@@ -11,16 +11,13 @@ body {
 
 .player-card{
     display: inline-block;
-    border:1px solid red;
+    border:3px solid black;
     height: 100px;
-  width: 100px;
-  margin: auto;
-  align-content: center;
-  text-align: center;
-  padding-right: 100px;
+    width: 100px;
+    margin: 8px;
 }
 
-.player-card-1 {
+/*.player-card-1 {
  align-content: center;
   
 }
@@ -33,7 +30,7 @@ body {
 .player-card-3 {
    align-content: center;
     
-}
+}*/
 .panel-body{
   color: darkblue;
 }

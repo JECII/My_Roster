@@ -15,18 +15,19 @@
 <body>
     <div class="container">
         <div class="panel panel">
-            <div class="panel-heading"> <center><b><h2>Player Roster</h2></b></center>
+            <div class="panel-heading">
+                <center><b><h2>Player Roster</h2></b></center>
             </div>
             <div class="panel-body">
                 <div class="player">
                     <form class="form-horizontal">
                         <div class="form-group">
-                            <label for="name" class="col-sm-2 control-label">Name</label>
+                            <label for="name" class="col-sm-2 control-label">Search By</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="name" placeholder="Name">
+                                <input type="text" class="form-control" id="query" placeholder="search ">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <!--<div class="form-group">
                             <label for="position" class="col-sm-2 control-label">Position</label>
                             <div class="col-sm-6">
                                 <input type="text" class="form-control" id="position" placeholder="Position">
@@ -37,76 +38,27 @@
                             <div class="col-sm-2">
                                 <input type="number" class="form-control" id="number">
                             </div>
-                        </div>
+                        </div>-->
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button id="addPlayerBtn" class="btn btn-success">Add Player</button>
+                                <button type="submit" class="btn btn-success">Find Player</button>
+                                <button class="clear-filter-button">Clear Filter</button>
                             </div>
                         </div>
                     </form>
-               <center> <img src="http://media.nbcchicago.com/images/652*379/01-12-2016-nfl-generic-field-football.jpg" alt="nfl"> </center>
-                    <div id="roster" class="player-roster">
-                        <div class="row-1">
-                            <div class="col-sm-6">
-                                <div id="playerCardTemplate" class="player-card-1">
-                                    
-                                    <div><strong>Name: </strong></div>
-                                    <div><strong>Position: </strong></div>
-                                    <div><strong>Number: </strong></div>
-                                </div>
-                            </div>
+                    <center> <img src="http://media.nbcchicago.com/images/652*379/01-12-2016-nfl-generic-field-football.jpg" alt="nfl">                        </center>
+                    <div class="row">
+                        <div id="home-team" class="home-team">
+
                         </div>
-                            <div class="row-2">
-                                <div class="col-sm-6">
-                                    <div id="playerCardTemplate" class="player-card-2">
-                                        
-                                        <div><strong>Name: </strong></div>
-                                        <div><strong>Position: </strong></div>
-                                        <div><strong>Number: </strong></div>
-                                    </div>
-                                </div>
 
-                            <div class="col-sm-3">
-                                <div id="playerCardTemplate" class="player-card-3">
-                                   
-                                    <div><strong>Name: </strong></div>
-                                    <div><strong>Position: </strong></div>
-                                    <div><strong>Number: </strong></div>
-                                </div>
-                            </div>
-                            </div>
+                    </div>
+                    <div id="roster" class="player-roster">
 
-                            <div class="col-sm-3">
-                                <div id="playerCardTemplate" class="player-card-4">
-                                    
-                                    <div><strong>Name: </strong></div>
-                                    <div><strong>Position: </strong></div>
-                                    <div><strong>Number: </strong></div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-3">
-                                <div id="playerCardTemplate" class="player-card-5">
-                                    button
-                                    
-                                    <div><strong>Name: </strong></div>
-                                    <div><strong>Position: </strong></div>
-                                    <div><strong>Number: </strong></div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-3">
-                                <div id="playerCardTemplate" class="player-card-6">
-                                 
-                                    <div><strong>Name: </strong></div>
-                                    <div><strong>Position: </strong></div>
-                                    <div><strong>Number: </strong></div>
-                                </div>
-                            </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
     </div>
 </body>
@@ -115,7 +67,9 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="app.js"></script>
-<script src=""></script>
+<script src="player-service.js"></script>
+<script src="nfl-roster-controller.js"></script>
+
 </body>
 
 </html>
